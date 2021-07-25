@@ -1,4 +1,4 @@
-<div aling="center">
+<div align="center">
   
   <img src="http://source-academy.github.io/sicp/sicp.png" alt="Structure and Interpretation of Computer Programs
 — JavaScript Adaptation" />
