@@ -1,0 +1,27 @@
+# Configuration file for running pyspelling
+matrix:
+- name: markdown
+  sources:
+  - '**/*.md'
+  aspell:
+    lang: pt_BR
+    d: pt_BR
+  dictionary:
+    wordlists: [ .github/wordlist.txt ]
+    output: .github/wordlist.dict
+  default_encoding: utf-8
+  pipeline:
+  - pyspelling.filters.text:
+  - pyspelling.filters.context:
+      context_visible_first: true
+      escapes: \\[\\`~]]
+      delimiters:
+      # Ignore multiline content between fenced codeblocks (```) or (```js)
+      - open: '(?s)^(?P<open> *`{3,}(js)?)$'
+        close: '^(?P=open)$'
+      # Ignore text between inline back ticks
+      - open: '(?P<open>`+)'
+        close: '(?P=open)'
+      # Ignore URLs in hyperlink
+      - open: '\]\('
+        close: '\)'
