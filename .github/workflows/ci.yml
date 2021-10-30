@@ -1,0 +1,20 @@
+on: [ workflow_dispatch, push, pull_request ]
+
+jobs:
+  lint:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+      - name: Install dependencies
+        run: |
+          npm install -g markdownlint-cli
+      - name: Set up problem matcher
+        uses: xt0rted/markdownlint-problem-matcher@v1
+      - name: Run markdown linter
+        run: |
+          markdownlint **/*.md --ignore node_modules --config .github/markdownlint.yml
