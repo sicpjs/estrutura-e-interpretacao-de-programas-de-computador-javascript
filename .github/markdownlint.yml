@@ -1,0 +1,13 @@
+# Default state for all rules
+default: true
+
+# Disable check for number of chars
+MD013:
+  line_length: 3000
+
+# Allow some HTML elements
+MD033:
+  allowed_elements:
+    - "a"
+    - "sup"
+    - "br"
