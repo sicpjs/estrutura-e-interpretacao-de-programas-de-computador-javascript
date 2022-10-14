@@ -33,7 +33,7 @@ JScript
 JavaScript
 Jay
 John
-Jr.
+Jr
 Just-In-Time
 Kleene
 Landin
@@ -110,6 +110,7 @@ não-inteiros
 of
 org
 png
+primalidade
 pt-br
 script
 scripts
