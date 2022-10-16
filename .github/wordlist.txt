@@ -33,7 +33,7 @@ JScript
 JavaScript
 Jay
 John
-Jr.
+Jr
 Just-In-Time
 Kleene
 Landin
@@ -46,6 +46,7 @@ MIT
 Martin
 Marvin
 McCarthy
+Microsoft
 Minsky
 Mozilla
 Navigator
@@ -110,6 +111,7 @@ não-inteiros
 of
 org
 png
+primalidade
 pt-br
 script
 scripts
