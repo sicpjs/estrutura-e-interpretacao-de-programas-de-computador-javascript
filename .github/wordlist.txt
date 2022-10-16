@@ -46,6 +46,7 @@ MIT
 Martin
 Marvin
 McCarthy
+Microsoft
 Minsky
 Mozilla
 Navigator
